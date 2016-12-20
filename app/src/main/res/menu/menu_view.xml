@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mobilecommerce.notepadapplication.ViewNoteActivity">
+
+    <!-- Lowest category order plus ifRoom means it will be displayed as a button -->
+
+
+    <item
+        android:id="@+id/action_share_note"
+        android:orderInCategory="1"
+        android:title="@string/share_button"
+        app:showAsAction="ifRoom"
+        android:actionProviderClass="android.widget.ShareActionProvider"/>
+
+
+    <!-- Never means never display as a button but as an item irrespective of the category order -->
+
+</menu>
